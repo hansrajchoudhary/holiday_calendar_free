@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemx"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/calendar_cell"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+   		android:layout_weight="1.7"
+   		android:layout_height="0dip">
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+        android:textColor="#0000D7"
+        android:layout_gravity="left"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginTop="2sp"
+        android:textStyle="bold" >
+    </TextView>
+    </LinearLayout>
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/holi"
+        android:layout_weight="1.4"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:gravity="center"
+   		android:textAlignment="center"
+        android:textColor="#100">
+    </TextView>
+</LinearLayout>

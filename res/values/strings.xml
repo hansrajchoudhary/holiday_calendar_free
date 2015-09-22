@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">World Holiday Calendar</string>
+	<string name="play_msg"><u>Play Msg</u></string>
+	<string name="msg_new"><u>Record New</u></string>
+	<string name="close_pop"><u>Close</u></string>
+	<string name="close_fav"><b>" CLOSE "</b></string>
+	<string name="save_pop"><u>Save!</u></string>
+	<string name="delete_rec"><u>Delete</u></string>
+	<string name="about_label">About Calendar</string>
+	<string name="the_fav"><h3>"My List of Holidays and Specials"</h3></string>
+	<string name="the_hol"><h3>"Complete List of Holidays (Swipe to delete)"</h3></string>
+	<string name="about_hol"><h4>"Swipe to delete the holiday from the list"</h4></string>
+	<string name="about_fav">\nTO ADD: Go to calender => press and hold on a day => perform action on the pop up clicking on PLUS or Delete icon \nTO BULK REMOVE: Go to the Holidays tab and swipe on any holiday to remove</string>
+	<string name="favorite_label">Manage Holidays</string>
+	<string name="note_label">Voice Note</string>
+<string name="about_title">About</string>
+<string name="like_label">Rate</string>
+<string name="ad_free_label">AD Free!</string>
+<string name="about_version">Holiday Calendar v3.0</string>
+<string name="about_author_email">hansrajchoudhary@gmail.com</string>
+<string name="about_project_url">http://solutionstack.co.in</string>
+<string name="up_url">https://play.google.com/store/apps/details?id=com.apps.calendarnew</string>
+<string name="country_text"><i><b><font color='#FF0000'>US, India, Russia, UK, China, Malaysia, Canada, Singapore, Thailand, HK, Brazil, UAE, Pakistan, Indonesia, SriLanka, and more ...</font></b></i></string>
+<string name="exit_label">Exit</string>
+</resources>

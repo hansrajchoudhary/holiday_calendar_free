@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/about" android:title="@string/about_label"
+      android:icon="@android:drawable/ic_menu_info_details" android:alphabeticShortcut="a" />
+   <item android:id="@+id/favorite" android:title="@string/favorite_label"
+      android:icon="@android:drawable/star_on" android:alphabeticShortcut="f" />
+   <item android:id="@+id/like" android:title="@string/like_label"
+      android:icon="@android:drawable/presence_online" android:alphabeticShortcut="l" />
+   <item android:id="@+id/ad_free" android:title="@string/ad_free_label"
+      android:icon="@android:drawable/presence_online" android:alphabeticShortcut="l" />
+   <item android:id="@+id/exit" android:title="@string/exit_label" android:icon="@android:drawable/ic_menu_close_clear_cancel"
+       android:alphabeticShortcut="h" />
+</menu>

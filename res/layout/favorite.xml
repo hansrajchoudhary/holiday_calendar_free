@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:screenOrientation="landscape"
+    >
+    <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFFFFF"/>
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_btn_0"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textStyle="bold" 
+        	android:textScaleX="1.2"
+            android:checked="true" />
+     	<View
+	    android:layout_width="1dp"
+	    android:layout_height="fill_parent"
+    	android:background="#FFFFFF"/>
+        <RadioButton
+            android:id="@+id/radio_btn_1"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:textStyle="bold" 
+        	android:textScaleX="1.2" />
+    </RadioGroup>
+    <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#FFFFFF"/>
+    <com.apps.calendar.HorizontalPager
+        android:id="@+id/horizontal_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+    	android:layout_weight="3">
+	 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	   	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:layout_marginBottom="30dp"
+    	android:layout_marginTop="30dp" 
+	   	android:padding="2dp">
+	   <LinearLayout android:orientation="vertical" android:padding="10dp"
+	      android:layout_height="fill_parent" android:layout_width="fill_parent">
+	      <TextView
+			 android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			 android:text="@string/the_fav" android:layout_gravity="center" 
+			 android:textColor="#00FF00" android:icon="@android:drawable/star_big_on"/>
+	         
+	     <TextView
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:singleLine="false"
+			android:background="#00FF00" />
+	            
+	      <TableLayout android:id="@+id/fav_content"
+	         android:layout_width="wrap_content" 
+	         android:paddingTop="5dp"
+	         android:paddingBottom="5dp"
+	         android:layout_height="wrap_content" />
+	      
+	      <TextView
+	        android:paddingTop="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#00FF00" />
+	      
+	      <TextView android:id="@+id/fav_id" android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" android:text="@string/about_fav"
+	         android:layout_gravity="left" android:textColor="#FFFF99"/>
+	      
+	      <Button android:text="@string/close_fav" android:id="@+id/fav_ok"
+	         android:layout_width="wrap_content" android:layout_height="wrap_content"
+	         android:layout_gravity="center"
+	         android:background="@drawable/round_button"
+	         android:onClick="onClickBtn"
+	         android:layout_marginTop="15dp"/>
+	   </LinearLayout>
+	 </ScrollView>
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:orientation="vertical" android:padding="10dp"
+	      android:layout_height="fill_parent" android:layout_width="fill_parent">
+	      <TextView
+			 android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			 android:text="@string/the_hol" android:layout_gravity="center" 
+			 android:textColor="#00FF00" android:icon="@android:drawable/star_big_on"/>
+	         
+	     <TextView
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#00FF00" />
+	            
+	      <ListView android:id="@+id/holiday_content"
+	         android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	 
+	     <TextView android:id="@+id/favs_id" android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" android:text="@string/about_hol"
+	         android:layout_gravity="left" android:textColor="#FF0000"/>
+	     <TextView
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#00FF00" />
+	   </LinearLayout>
+    </com.apps.calendar.HorizontalPager>
+ </LinearLayout>
